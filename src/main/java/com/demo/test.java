@@ -17,7 +17,7 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
  */
 public class test {
     ApplicationContext context = new FileSystemXmlApplicationContext("config/spring-mybatis.xml");
-    UserController userController = (UserController) context.getBean("UserController");
+    UserController userController =  context.getBean(UserController.class);
 
     @Test
     public void userinsert(){

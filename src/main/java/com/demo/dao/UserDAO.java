@@ -9,7 +9,7 @@ import com.demo.model.User;
 
 import java.util.List;
 
-@Transactional(propagation=Propagation.REQUIRES_NEW,readOnly=false,isolation=Isolation.DEFAULT)
+//@Transactional(propagation=Propagation.REQUIRES_NEW,readOnly=false,isolation=Isolation.DEFAULT)
 public interface UserDAO {
 	public boolean insertUser(User user);
 

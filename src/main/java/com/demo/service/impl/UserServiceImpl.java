@@ -19,7 +19,10 @@ public class UserServiceImpl implements UserService{
     private UserDAO userDAO;
      
     public boolean insertUser(User user) {
-        return userDAO.insertUser(user);
+        userDAO.insertUser(user);
+        int i = 1/0;
+        System.out.println(i);
+        return false;
     }
 
     public List<User> findallUser() {
